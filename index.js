@@ -1,10 +1,13 @@
 //Importing Express
+require('dotenv').config()
 const express = require('express')
 const cors=require('cors')
 //Create our server by calling express
 const app = express() //app can be called server
 //Anything above 2024 can be used as a port
-const port = 2800
+//const port = 2800
+const port=process.env.PORT
+//process.env.PORT
 //creating a route. The way it is written
 //[server].[method]('<path>',callback)
 //req->request, res->response
